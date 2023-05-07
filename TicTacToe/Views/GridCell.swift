@@ -10,6 +10,7 @@ import UIKit
 enum Symbol {
     case cross
     case circle
+    case none
 }
 
 class GridCell: UICollectionViewCell {
@@ -47,6 +48,9 @@ class GridCell: UICollectionViewCell {
             imageView.tintColor = .red
         case .circle:
             imageView.image = UIImage(systemName: "circle")
+            imageView.tintColor = .black
+        case .none:
+            imageView.image = nil
         }
     }
 }
